@@ -7,5 +7,3 @@ host_network: true
 arch:
   - amd64
   - aarch64
-map:
-  - "user-data:rw"
