@@ -8,3 +8,7 @@ host_network: true
 arch:
   - amd64
   - aarch64
+options:
+  TOKEN: ""
+schema:
+  TOKEN: "str"
