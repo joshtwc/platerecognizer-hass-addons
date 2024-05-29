@@ -2,8 +2,6 @@ name: Plate Recognizer Stream
 version: 1.50.0
 slug: frigate
 description: process camera or video files on-premise.
-url: "https://app.platerecognizer.com/start/"
-image: platerecognizer/alpr-stream
 init: false
 host_network: true
 arch:
