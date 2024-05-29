@@ -1,4 +1,13 @@
-services:
-  image: platerecognizer/alpr-stream:latest
-  volumes:
-    - "/homeassistant/custom_components/platerecognizer:/config"
+name: Plate Recognizer Stream
+version: 1.50.0
+slug: frigate
+description: process camera or video files on-premise.
+url: "https://app.platerecognizer.com/start/"
+image: platerecognizer/alpr-stream:latest
+init: false
+host_network: true
+arch:
+  - amd64
+  - aarch64
+map:
+  - "user-data:rw"
