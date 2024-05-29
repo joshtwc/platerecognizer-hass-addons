@@ -1,0 +1,25 @@
+{
+  "name": "Plate Recognizer Stream",
+  "version": "1.50.0",
+  "slug": "platerecognizer",
+  "description": "process camera or video files on-premise.",
+  "init": false,
+  "host_network": true,
+  "arch": ["amd64", "aarch64"],
+  "options": {
+    "schema": {
+      "TOKEN": {
+        "type": "string",
+        "required": true,
+        "default": "",
+        "description": "Plate recognizer token"
+      },
+      "LICENSE_KEY": {
+        "type": "string",
+        "required": true,
+        "default": "",
+        "description": "Plate recognizer license key"
+      }
+    }
+  }
+}

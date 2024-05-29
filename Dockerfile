@@ -5,4 +5,9 @@ FROM $BUILD_FROM
 COPY run.sh /
 RUN chmod a+x /run.sh
 
+ARG LICENSE_KEY
+ENV LICENSE_KEY ${LICENSE_KEY}
+ARG TOKEN
+ENV TOKEN ${TOKEN}
+
 CMD [ "/run.sh" ]
