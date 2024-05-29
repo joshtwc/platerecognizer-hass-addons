@@ -7,19 +7,7 @@
   "init": false,
   "arch": ["amd64", "aarch64"],
   "options": {
-    "schema": {
-      "TOKEN": {
-        "type": "string",
-        "required": true,
-        "default": "",
-        "description": "Plate recognizer token"
-      },
-      "LICENSE_KEY": {
-        "type": "string",
-        "required": true,
-        "default": "",
-        "description": "Plate recognizer license key"
-      }
-    }
+    "TOKEN": "",
+    "LICENSE_KEY": ""
   }
 }
