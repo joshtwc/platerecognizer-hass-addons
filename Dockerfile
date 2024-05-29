@@ -1,13 +1,13 @@
 ARG BUILD_FROM
+ARG TOKEN
+ARG LICENSE_KEY
 FROM $BUILD_FROM
 
 # Copy data for add-on
 COPY run.sh /
 RUN chmod a+x /run.sh
 
-ARG LICENSE_KEY
 ENV LICENSE_KEY ${LICENSE_KEY}
-ARG TOKEN
 ENV TOKEN ${TOKEN}
 
 CMD [ "/run.sh" ]
