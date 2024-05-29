@@ -10,3 +10,6 @@ arch:
   - aarch64
 environment:
   TOKEN: ""
+options:
+  TOKEN: ""
+  LICENSE_KEY: ""
