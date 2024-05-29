@@ -1,6 +1,6 @@
 name: Plate Recognizer Stream
 version: 1.50.0
-slug: frigate
+slug: platerecognizer
 description: process camera or video files on-premise.
 image: platerecognizer/alpr-stream
 init: false
@@ -8,7 +8,5 @@ host_network: true
 arch:
   - amd64
   - aarch64
-options:
+environment:
   TOKEN: ""
-schema:
-  TOKEN: "str"
