@@ -1,0 +1,4 @@
+services:
+  image: platerecognizer/alpr-stream:latest
+  volumes:
+    - "/homeassistant/custom_components/platerecognizer:/config"
