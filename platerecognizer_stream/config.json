@@ -6,8 +6,12 @@
   "image": "platerecognizer/alpr-stream",
   "init": false,
   "arch": ["amd64", "aarch64"],
-  "environment": {
+  "options": {
     "TOKEN": "",
     "LICENSE_KEY": ""
+  },
+  "schema": {
+    "TOKEN": "password?",
+    "LICENSE_KEY": "password?"
   }
 }
