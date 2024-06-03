@@ -1,6 +1,6 @@
 {
   "name": "Plate Recognizer Stream",
-  "version": "1.4.4",
+  "version": "1.4.5",
   "slug": "platerecognizer",
   "description": "process camera or video files on-premise.",
   "init": false,
