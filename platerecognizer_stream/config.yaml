@@ -1,5 +1,5 @@
 name: "Plate Recognizer Stream"
-version: "1.6.10"
+version: "1.6.11"
 slug: platerecognizer
 description: >-
   "Process camera or video files on-premise."
@@ -14,4 +14,6 @@ schema:
   TOKEN: password?
   LICENSE_KEY: password?
 map:
-  data: /user-data
+  config:
+    path: /user-data
+    read_only: rw
