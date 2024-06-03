@@ -14,5 +14,6 @@ schema:
   TOKEN: password?
   LICENSE_KEY: password?
 map:
-  - name: data:rw
-    target: /user-data
+  - data:
+      name: data:rw
+      target: /user-data
