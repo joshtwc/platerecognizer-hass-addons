@@ -10,4 +10,4 @@ export TOKEN=$TOKEN
 export LICENCE_KEY=$LICENCE_KEY
 
 # Now run your application, passing the environment variable
-exec ./run.sh "$@"
+exec ./start.sh "$@"
