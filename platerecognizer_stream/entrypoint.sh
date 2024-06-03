@@ -1,9 +1,8 @@
 #!/bin/bash
-CONFIG_PATH=/data/options.json
 
 # Load options from the JSON file
-TOKEN=$(jq --raw-output '.token' $CONFIG_PATH)
-LICENCE_KEY=$(jq --raw-output '.licence_key' $CONFIG_PATH)
+TOKEN=$(bashio::config 'TOKEN')
+LICENCE_KEY=$(bashio::config 'LICENCE_KEY')
 
 # Export the environment variable
 export TOKEN=$TOKEN
