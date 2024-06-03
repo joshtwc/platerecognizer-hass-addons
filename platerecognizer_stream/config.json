@@ -1,6 +1,6 @@
 {
   "name": "Plate Recognizer Stream",
-  "version": "1.6.6",
+  "version": "1.6.7",
   "slug": "platerecognizer",
   "description": "process camera or video files on-premise.",
   "init": false,
@@ -15,7 +15,7 @@
     "LICENSE_KEY": "password?"
   },
   "map": {
-    "addon_config": {
+    "config": {
       "path": "/user-data",
       "read_only": false
     }
