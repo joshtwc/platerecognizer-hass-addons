@@ -1,0 +1,17 @@
+name: Plate Recognizer Stream
+version: 1.6.8
+slug: platerecognizer
+description: Process camera or video files on-premise.
+init: False
+host_network: True
+arch:
+  - amd64
+options:
+  TOKEN:
+  LICENSE_KEY:
+schema:
+  TOKEN: password?
+  LICENSE_KEY: password?
+map:
+  - name: config:rw
+    target: /user-data
