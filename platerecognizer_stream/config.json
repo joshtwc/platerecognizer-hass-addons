@@ -18,7 +18,7 @@
     {
       "name": "addon_config",
       "target": "/user-data",
-      "read_only": false
+      "type": "rw"
     }
   ]
 }
