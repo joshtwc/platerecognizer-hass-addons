@@ -1,6 +1,6 @@
 {
   "name": "Plate Recognizer Stream",
-  "version": "1.6.14",
+  "version": "1.6.15",
   "slug": "platerecognizer",
   "description": "process camera or video files on-premise.",
   "init": false,
@@ -14,7 +14,7 @@
     "TOKEN": "password?",
     "LICENSE_KEY": "password?"
   },
-  "map": {
+  "map_volumes": {
     "data": {
       "path": "/license",
       "read_only": "rw"
