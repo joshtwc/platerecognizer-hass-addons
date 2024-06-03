@@ -15,6 +15,6 @@
     "LICENSE_KEY": "password?"
   },
   "map": {
-    "/user-data": "addon_config:rw"
+    "addon_config": "/user-data:rw"
   }
 }
