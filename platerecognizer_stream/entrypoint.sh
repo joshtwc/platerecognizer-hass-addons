@@ -8,8 +8,7 @@ LICENSE_KEY=$(bashio::config 'LICENSE_KEY')
 export TOKEN=$TOKEN
 export LICENSE_KEY=LICENSE_KEY
 
-echo "$TOKEN"
-echo "Current shell: $SHELL"
+cat /data/options.json
 
 # Now run your application, passing the environment variable
 exec ./start.sh "$@"
