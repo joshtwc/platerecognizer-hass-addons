@@ -1,8 +1,8 @@
 {
   "name": "Plate Recognizer Stream",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "slug": "platerecognizer",
-  "description": "process camera or video files on-premise.",
+  "description": "Highly-accurate ALPR software that processes live camera or video feeds quickly & efficiently.",
   "url": "https://platerecognizer.com/",
   "init": false,
   "arch": ["amd64"],
