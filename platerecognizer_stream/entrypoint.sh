@@ -1,14 +1,16 @@
 #!/usr/bin/env bashio
 
-# Load options from the JSON file
-TOKEN=$(bashio::config 'TOKEN')
-LICENSE_KEY=$(bashio::config 'LICENSE_KEY')
+CONFIG_PATH=/data/options.json
+
+TOKEN=$(python3 -c "import json; print(json.load(open('$CONFIG_PATH'))['TOKEN'])")
+LICENSE_KEY=$(python3 -c "import json; print(json.load(open('$CONFIG_PATH'))['LICENSE_KEY'])")
 
 # Export the environment variable
 export TOKEN=$TOKEN
 export LICENSE_KEY=LICENSE_KEY
 
-cat /data/options.json
+echo "$TOKEN"
+echo "$LICENSE_KEY"
 
 # Now run your application, passing the environment variable
 exec ./start.sh "$@"
