@@ -15,8 +15,6 @@ RUN curl -J -L -o /tmp/bashio.tar.gz "https://github.com/hassio-addons/bashio/ar
 # Ensure bashio is sourced in every bash session
 RUN echo "source /usr/lib/bashio/bashio.sh" >> /etc/bash.bashrc
 
-RUN ln -s /config /user-data
-
 # Copy data for add-on
 COPY entrypoint.sh /
 RUN chmod a+x /entrypoint.sh

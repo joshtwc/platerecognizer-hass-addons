@@ -9,7 +9,7 @@ LICENSE_KEY=$(python3 -c "import json; print(json.load(open('$CONFIG_PATH'))['LI
 export TOKEN=$TOKEN
 export LICENSE_KEY=$LICENSE_KEY
 
-ln -s /share /user-data
+ln -s /config /user-data
 
 # Now run your application, passing the environment variable
 exec ./start.sh "$@"
