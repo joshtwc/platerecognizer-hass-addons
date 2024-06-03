@@ -19,4 +19,4 @@ RUN echo "source /usr/lib/bashio/bashio.sh" >> /etc/bash.bashrc
 COPY entrypoint.sh /
 RUN chmod a+x /entrypoint.sh
 
-ENTRYPOINT ["/entrypoint.sh"]
+ENTRYPOINT ["/bin/bash", "/entrypoint.sh"]
