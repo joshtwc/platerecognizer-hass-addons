@@ -1,8 +1,4 @@
-#!/bin/bash
-
-source /usr/lib/bashio/bashio.sh
-
-CONFIG_PATH=/data/options.json
+#!/usr/bin/env bashio
 
 # Load options from the JSON file
 TOKEN=$(bashio::config 'TOKEN')
