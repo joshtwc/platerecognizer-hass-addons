@@ -1,6 +1,6 @@
 {
   "name": "Plate Recognizer Stream",
-  "version": "1.6.16",
+  "version": "1.7.0",
   "slug": "platerecognizer",
   "description": "process camera or video files on-premise.",
   "init": false,
@@ -16,7 +16,7 @@
   },
   "map": [
     {
-      "type": "config",
+      "type": "addon_config",
       "path": "/user-data",
       "read_only": false
     }
