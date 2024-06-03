@@ -16,8 +16,8 @@
   },
   "map": {
     "addon_config": {
-      "target": "/user-data",
-      "type": "rw"
+      "path": "/user-data",
+      "read_only": false
     }
   }
 }
