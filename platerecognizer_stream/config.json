@@ -1,11 +1,11 @@
 {
   "name": "Plate Recognizer Stream",
-  "version": "1.50.0",
+  "version": "1.0",
   "slug": "platerecognizer",
   "description": "process camera or video files on-premise.",
-  "image": "platerecognizer/alpr-stream",
+  "image": "local/custom-alpr:latest",
   "init": false,
-  "arch": ["amd64", "aarch64"],
+  "arch": ["amd64"],
   "options": {
     "TOKEN": "",
     "LICENSE_KEY": ""

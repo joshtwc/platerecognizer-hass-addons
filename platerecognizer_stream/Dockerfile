@@ -1,10 +1,7 @@
-ARG BUILD_FROM
-FROM $BUILD_FROM
+FROM platerecognizer/alpr-stream
 
 # Copy data for add-on
-COPY run.sh /
-COPY pre_run.sh /
-RUN chmod a+x /pre_run.sh
-RUN chmod a+x /run.sh
+COPY entrypoint.sh /
+RUN chmod a+x /entrypoint.sh
 
-CMD [ "/pre_run.sh" ]
+ENTRYPOINT ["/entrypoint.sh"]
