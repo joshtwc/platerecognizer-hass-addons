@@ -9,5 +9,7 @@ LICENCE_KEY=$(jq --raw-output '.licence_key' $CONFIG_PATH)
 export TOKEN=$TOKEN
 export LICENCE_KEY=$LICENCE_KEY
 
+echo "$TOKEN"
+
 # Now run your application, passing the environment variable
 exec ./start.sh "$@"
