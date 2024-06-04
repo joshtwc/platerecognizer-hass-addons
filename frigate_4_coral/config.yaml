@@ -39,6 +39,7 @@ privileged:
   - PERFMON
 environment:
   CONFIG_FILE: /config/frigate.yml
+  LIBVA_DRIVER_NAME: i965
 schema:
   plus_api_key: password?
 services:
