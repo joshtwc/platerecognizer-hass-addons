@@ -34,12 +34,14 @@ ports_description:
 host_network: false
 usb: true
 tmpfs: true
+video: true
+devices:
+  - /dev/dri/renderD128
 full_access: false
 privileged:
   - PERFMON
 environment:
   CONFIG_FILE: /config/frigate.yml
-  LIBVA_DRIVER_NAME: i965
 schema:
   plus_api_key: password?
 services:
