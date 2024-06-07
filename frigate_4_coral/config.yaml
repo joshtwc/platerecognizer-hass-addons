@@ -10,7 +10,7 @@ startup: application
 boot: auto
 init: false
 webui: "http://[HOST]:[PORT:5000]/"
-watchdog: "http://[HOST]:[PORT:5000]/"
+watchdog: "http://[HOST]:[PORT:1984]/"
 ingress: true
 ingress_port: 5000
 ingress_entry: /
@@ -35,8 +35,6 @@ host_network: false
 usb: true
 tmpfs: true
 video: true
-devices:
-  - /dev/dri/renderD128
 full_access: false
 privileged:
   - PERFMON
