@@ -31,6 +31,9 @@ ports_description:
   5000/tcp: Web interface (Not required for Hass.io Ingress)
   1984/tcp: go2rtc API
   1935/tcp: RTMP streams
+devices:
+  - /dev/apex_0:/dev/apex_0
+  - /dev/apex_1:/dev/apex_1
 host_network: false
 usb: true
 tmpfs: true
