@@ -20,10 +20,11 @@ hassio_api: true
 ports:
   8555/tcp: 8555
   8555/udp: 8555
-  8554/tcp: null
-  5000/tcp: null
-  1984/tcp: null
-  1935/tcp: null
+  8554/tcp: 8554
+  5000/tcp: 5000
+  1984/tcp: 1984
+  1935/tcp: 1935
+  1939/tcp: 1939
 ports_description:
   8555/tcp: WebRTC over tcp
   8555/udp: WebRTC over udp
@@ -31,6 +32,7 @@ ports_description:
   5000/tcp: Web interface (Not required for Hass.io Ingress)
   1984/tcp: go2rtc API
   1935/tcp: RTMP streams
+  1939/tcp: RTMP consume
 devices:
   - /dev/apex_0:/dev/apex_0
   - /dev/apex_1:/dev/apex_1
